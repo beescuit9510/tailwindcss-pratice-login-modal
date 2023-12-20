@@ -13,7 +13,7 @@
         class="px-4 py-8 bg-white rounded-2xl shadow-2xl my-10 relative sm:flex sm:p-0"
       >
         <!-- LEFT -->
-        <div class="sm:p-20">
+        <div class="w-full sm:p-20">
           <!-- X BTN -->
           <div
             class="absolute right-4 top-4 w-10 h-10 bg-gray-200 rounded-full flex justify-center items-center hover:-translate-y-0.5 transition hover:cursor-pointer sm:bg-white"
@@ -97,11 +97,13 @@
         </div>
 
         <!-- RIGHT -->
-        <img
-          class="hidden sm:block w-[430px] rounded-r-2xl"
-          src="./assets/image.jpg"
-          alt=""
-        />
+        <div class="max-w-[430px]">
+          <img
+            class="h-full object-cover hidden sm:block rounded-r-2xl"
+            src="./assets/image.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   </body>
