@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="flex justify-center items-center min-h-screen bg-pink-50">
+      <!-- CONTAINER -->
+      <div
+        class="px-4 py-8 bg-white rounded-2xl shadow-2xl my-10 relative sm:flex sm:p-0"
+      >
+        <!-- LEFT -->
+        <div class="sm:p-20">
+          <!-- X BTN -->
+          <div
+            class="absolute right-4 top-4 w-10 h-10 bg-gray-200 rounded-full flex justify-center items-center hover:-translate-y-0.5 transition hover:cursor-pointer sm:bg-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 text-black group-hover:text-gray-600"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </div>
+
+          <h1 class="text-3xl font-bold font-serif">Log in</h1>
+          <p class="max-w-sm mt-2 mb-10 font-light text-zinc-700">
+            Log in to your account to upload or download pictures, videos or
+            music.
+          </p>
+          <input
+            class="w-full py-6 px-6 border border-zinc-300 rounded-lg font-light my-2"
+            type="text"
+            placeholder="Enter your email address"
+          />
+          <!-- PW BTNS -->
+          <div class="flex flex-col gap-2 sm:flex-row">
+            <button
+              class="w-full py-6 rounded-lg font-light text-cyan-700 sm:text-left"
+            >
+              Forgot password
+            </button>
+            <button
+              class="py-6 border rounded-lg font-light bg-cyan-700 text-white flex justify-center items-center gap-2 hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5 transition sm:px-8"
+            >
+              <p>Next</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line x1="13" y1="18" x2="19" y2="12"></line>
+                <line x1="13" y1="6" x2="19" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+
+          <!-- BORDER -->
+          <div class="border-b my-10"></div>
+          <p class="font-light text-sm text-zinc-400 text-center">
+            or log in with
+          </p>
+
+          <!-- 3PARTY LIB BTNs -->
+          <div class="flex flex-col gap-4 mt-4 sm:flex-row sm:gap-2">
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-300 font-light flex justify-center items-center gap-2 hover:shadow-lg hover:-translate-y-0.5 transition"
+            >
+              <img class="w-8" src="./assets/facebook.png" alt="" />
+              Facebook
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-300 font-light flex justify-center items-center gap-2 hover:shadow-lg hover:-translate-y-0.5 transition"
+            >
+              <img class="w-8" src="./assets/google.png" alt="" />
+              Google
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <img
+          class="hidden sm:block w-[430px] rounded-r-2xl"
+          src="./assets/image.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
